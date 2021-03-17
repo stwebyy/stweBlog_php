@@ -1,7 +1,7 @@
 body {
     font-family: 'Noto Sans JP', sans-serif;
     color: #333333;
-	background-color: #FFFFFF;
+	background-color: #f7f7f7;
 	font-size: 100%;
 	line-height: 1.7;
 	-webkit-text-size-adjust: 100%;
@@ -14,8 +14,20 @@ header {
     text-align: center;
 }
 
+p {
+    margin-bottom: 0;
+}
+
 header .headline {
     font-size: 32px;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.color-bk {
+    color: #000;
 }
 
 .blog-header-logo {
@@ -28,6 +40,10 @@ header .headline {
     text-decoration: none;
     opacity: 0.5;
 
+}
+
+.base__BoxShadow {
+    box-shadow: 2px -1px 5px #e7e8e8ee;
 }
 
 .nav-list {
@@ -72,4 +88,63 @@ header .headline {
 
 .nav-list-item:hover::after {
 	width: 100%;
+}
+
+.article__Row {
+    border: 1px solid #e7e7e7;
+    padding: 10px 20px;
+    margin: 10px 0;
+    box-shadow: 1px 1px 2px #eee;
+    transition: linear .2s all;
+}
+
+.article__Row:hover {
+    background: #eeeeee;
+}
+
+.article__Row a:hover {
+    text-decoration: none;
+}
+
+.article__RowTitle {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.article__RowDiscription {
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;}
+
+.article__RowDate {
+    font-size: 12px;
+    color: #a8a8a8;
+}
+
+.article__Category {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.article__CategoryItem {
+    display: inline-block;
+    padding: 1px 4px;
+    margin: 0 2px;
+    font-size: 12px;
+    background: #6b78a0;
+    border: 1px solid #ddd;
+    transition: linear .2s all;
+}
+
+.article__CategoryItem:hover {
+    background: #3b4561;
+}
+
+.article__CategoryItem a {
+    color: #fff;
+}
+
+.card-text {
+    font-size: 14px;
 }
