@@ -7,6 +7,10 @@ body {
 	-webkit-text-size-adjust: 100%;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 header {
     width: 100%;
     padding: 15px 0;
@@ -26,8 +30,16 @@ header .headline {
     font-size: 12px;
 }
 
+.b-none {
+    border: none;
+}
+
 .color-bk {
     color: #000;
+}
+
+.color-light-gray {
+    color: #a8a8a8;
 }
 
 .blog-header-logo {
@@ -122,12 +134,16 @@ header .headline {
     color: #a8a8a8;
 }
 
-.article__Category {
-    margin-top: 10px;
-    text-align: right;
+.article__Tag {
+    margin-top: 5px;
 }
 
-.article__CategoryItem {
+.tag__Items {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.tag__ItemList {
     display: inline-block;
     padding: 1px 4px;
     margin: 0 2px;
@@ -137,14 +153,41 @@ header .headline {
     transition: linear .2s all;
 }
 
-.article__CategoryItem:hover {
+.tag__ItemList:hover {
     background: #3b4561;
 }
 
-.article__CategoryItem a {
+.tag__ItemList a {
     color: #fff;
+}
+
+.right__Box {
+    padding: 10px;
 }
 
 .card-text {
     font-size: 14px;
+}
+
+.right__Header {
+    padding: 10px 10px;
+    background: #e9ecef;
+}
+
+.recent__Posts {
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+    margin: 5px 0;
+    transition: linear .2s all;
+}
+
+.recent__Posts:hover {
+    background: #eeeeee;
+}
+
+.recent__PostsTitle {
+    color: #000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
