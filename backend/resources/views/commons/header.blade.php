@@ -8,7 +8,6 @@
         <li class="nav-list-item">
             <a href="#" class="nav-list-link">Home</a>
         </li>
-        <li class="nav-list-item"><a href="#" class="nav-list-link">About</a></li>
         <li class="nav-list-item"><a href="#" class="nav-list-link">ブログ/備忘録</a></li>
         <li class="nav-list-item"><a href="#" class="nav-list-link">作り物たち</a></li>
     </ul>

@@ -62,6 +62,113 @@
                     </div>
                 </a>
             </article>
+            <article class="article__Row">
+                <a href="#">
+                    <div class="article__RowDate mb-1">
+                        <i class="fas fa-calendar-week"></i><span class="ml-1">2021/03/17</span>
+                        <span class="ml-2"><i class="fas fa-sync"></i><span class="ml-1">2021/03/19</span></span>
+                    </div>
+                    <h1 class="article__RowTitle color-bk">Laravel×React×Docker×AWS EC2のベストプラクティスに関してまとめた結果こうなった</h1>
+                    <p class="article__RowDiscription color-bk">SymfonyのFormは全てEntityと紐づいています。さらにオプションを指定すれば色々なフォームを自動で作成できるようになります。...</p>
+                    <div class="article__Tag">
+                        <div class="tag__ItemList">
+                            <object><a href="#?1"><i class="fas fa-tag"></i>&nbsp;PHP</a></object>
+                        </div>
+                        <div class="tag__ItemList">
+                            <object><a href="#?2"><i class="fas fa-tag"></i>&nbsp;Laravel</a></object>
+                        </div>
+                        <div class="tag__ItemList">
+                            <object><a href="#?3"><i class="fas fa-tag"></i>&nbsp;Docker</a></object>
+                        </div>
+                        <div class="tag__ItemList">
+                            <object><a href="#?4"><i class="fas fa-tag"></i>&nbsp;AWS</a></object>
+                        </div>
+                    </div>
+                </a>
+            </article>
+            <article class="article__Row">
+                <a href="#">
+                    <div class="article__RowDate mb-1">
+                        <i class="fas fa-calendar-week"></i><span class="ml-1">2021/03/17</span>
+                        <span class="ml-2"><i class="fas fa-sync"></i><span class="ml-1">2021/03/19</span></span>
+                    </div>
+                    <h1 class="article__RowTitle color-bk">Laravel×React×Docker×AWS EC2のベストプラクティスに関してまとめた結果こうなった</h1>
+                    <p class="article__RowDiscription color-bk">SymfonyのFormは全てEntityと紐づいています。さらにオプションを指定すれば色々なフォームを自動で作成できるようになります。...</p>
+                    <div class="article__Tag">
+                        <div class="tag__ItemList">
+                            <object><a href="#?1"><i class="fas fa-tag"></i>&nbsp;PHP</a></object>
+                        </div>
+                        <div class="tag__ItemList">
+                            <object><a href="#?2"><i class="fas fa-tag"></i>&nbsp;Laravel</a></object>
+                        </div>
+                        <div class="tag__ItemList">
+                            <object><a href="#?3"><i class="fas fa-tag"></i>&nbsp;Docker</a></object>
+                        </div>
+                        <div class="tag__ItemList">
+                            <object><a href="#?4"><i class="fas fa-tag"></i>&nbsp;AWS</a></object>
+                        </div>
+                    </div>
+                </a>
+            </article>
+            <article class="article__Row">
+                <a href="#">
+                    <div class="article__RowDate mb-1">
+                        <i class="fas fa-calendar-week"></i><span class="ml-1">2021/03/17</span>
+                        <span class="ml-2"><i class="fas fa-sync"></i><span class="ml-1">2021/03/19</span></span>
+                    </div>
+                    <h1 class="article__RowTitle color-bk">Laravel×React×Docker×AWS EC2のベストプラクティスに関してまとめた結果こうなった</h1>
+                    <p class="article__RowDiscription color-bk">SymfonyのFormは全てEntityと紐づいています。さらにオプションを指定すれば色々なフォームを自動で作成できるようになります。...</p>
+                    <div class="article__Tag">
+                        <div class="tag__ItemList">
+                            <object><a href="#?1"><i class="fas fa-tag"></i>&nbsp;PHP</a></object>
+                        </div>
+                        <div class="tag__ItemList">
+                            <object><a href="#?2"><i class="fas fa-tag"></i>&nbsp;Laravel</a></object>
+                        </div>
+                        <div class="tag__ItemList">
+                            <object><a href="#?3"><i class="fas fa-tag"></i>&nbsp;Docker</a></object>
+                        </div>
+                        <div class="tag__ItemList">
+                            <object><a href="#?4"><i class="fas fa-tag"></i>&nbsp;AWS</a></object>
+                        </div>
+                    </div>
+                </a>
+            </article>
+            <article class="article__Row">
+                <a href="#">
+                    <div class="article__RowDate mb-1">
+                        <i class="fas fa-calendar-week"></i><span class="ml-1">2021/03/17</span>
+                        <span class="ml-2"><i class="fas fa-sync"></i><span class="ml-1">2021/03/19</span></span>
+                    </div>
+                    <h1 class="article__RowTitle color-bk">Laravel×React×Docker×AWS EC2のベストプラクティスに関してまとめた結果こうなった</h1>
+                    <p class="article__RowDiscription color-bk">SymfonyのFormは全てEntityと紐づいています。さらにオプションを指定すれば色々なフォームを自動で作成できるようになります。...</p>
+                    <div class="article__Tag">
+                        <div class="tag__ItemList">
+                            <object><a href="#?1"><i class="fas fa-tag"></i>&nbsp;PHP</a></object>
+                        </div>
+                        <div class="tag__ItemList">
+                            <object><a href="#?2"><i class="fas fa-tag"></i>&nbsp;Laravel</a></object>
+                        </div>
+                        <div class="tag__ItemList">
+                            <object><a href="#?3"><i class="fas fa-tag"></i>&nbsp;Docker</a></object>
+                        </div>
+                        <div class="tag__ItemList">
+                            <object><a href="#?4"><i class="fas fa-tag"></i>&nbsp;AWS</a></object>
+                        </div>
+                    </div>
+                </a>
+            </article>
+            <div class="pagenation__Area">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#"><</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
         <div class="col-4 ">
             <div class="bg-white base__BoxShadow">
@@ -128,4 +235,6 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
 @endsection

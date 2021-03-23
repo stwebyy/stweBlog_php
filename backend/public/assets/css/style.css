@@ -175,6 +175,7 @@ header .headline {
 }
 
 .recent__Posts {
+    font-size: 14px;
     border-bottom: 1px solid #ddd;
     padding: 5px;
     margin: 5px 0;
@@ -190,4 +191,41 @@ header .headline {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+.breadcrumb {
+    border-radius: unset;
+}
+
+/**
+ * ページネーション関連
+ */
+.pagenation__Area {
+    margin-top: 30px;
+}
+
+.pagination {
+    justify-content: center;
+}
+
+.page-link {
+    color: #9b9b9b;
+}
+
+#wrapper {
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 120px;
+    box-sizing: border-box;
+}
+
+footer {
+    font-size: 14px;
+    width: 100%;
+    background-color: #c0c0c0;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
 }
