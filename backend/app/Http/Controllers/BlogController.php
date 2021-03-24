@@ -7,11 +7,23 @@ use Illuminate\Http\Request;
 class BlogController extends Controller
 {
     /**
-     * TOPページ
+     * ブログTOPページ
      * 
      * @return View
      */
     public function index(): object
+    {
+        return view('index');
+    }
+
+    /**
+     * ブログTOPページ
+     * 
+     * @param string id
+     * 
+     * @return View
+     */
+    public function show(str $id): object
     {
         return view('index');
     }
