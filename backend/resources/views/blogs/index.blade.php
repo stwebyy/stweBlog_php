@@ -21,7 +21,7 @@
                 </a>
             </article>
             <article class="article__Row">
-                <a href="#">
+                <a href="{{ route('blog_show', 1) }}">
                     <div class="article__RowDate mb-1">
                         <i class="fas fa-calendar-week"></i><span class="ml-1">2021/03/17</span>
                         <span class="ml-2"><i class="fas fa-sync"></i><span class="ml-1">2021/03/19</span></span>
