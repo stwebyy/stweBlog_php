@@ -1,5 +1,6 @@
 <aside class="col-4">
     <div class="bg-white base__BoxShadow">
+        {{-- TODO: ブログ記事の場合、目次を入れるという条件分岐の作成 --}}
         <div class="right__Box">
             <h5 class="right__Header">Recent Posts</h5>
             <div class="recent__Posts">
