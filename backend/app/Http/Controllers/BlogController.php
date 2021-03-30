@@ -13,7 +13,7 @@ class BlogController extends Controller
      */
     public function index(): object
     {
-        return view('index');
+        return view('blogs.index');
     }
 
     /**
@@ -23,8 +23,8 @@ class BlogController extends Controller
      * 
      * @return View
      */
-    public function show(str $id): object
+    public function show(string $id): object
     {
-        return view('index');
+        return view('blogs.show');
     }
 }
