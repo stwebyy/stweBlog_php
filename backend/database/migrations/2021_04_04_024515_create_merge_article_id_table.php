@@ -17,10 +17,10 @@ class CreateMergeArticleIdTable extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('qiita_article_id');
             $table->unsignedBigInteger('article_id');
+            $table->timestamps();
 
             $table->foreign('qiita_article_id')->references('id')->on('qiita_articles');
             $table->foreign('article_id')->references('id')->on('articles');
-            $table->timestamps();
         });
     }
 
