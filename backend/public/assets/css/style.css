@@ -168,7 +168,7 @@ header .headline {
 
 .article__LastBtn {
     color: #ffffff;
-    background: #b2c5ede2;
+    background: #9eb3dfe2;
     border-radius: 3%;
     transition: all .2s linear;
     margin-bottom: 20px;
@@ -176,7 +176,7 @@ header .headline {
 
 .article__LastBtn:hover {
     color: #fff;
-    background: #9fb2dbe2;
+    background: #879dcae2;
 }
 
 .tag__Items {
@@ -275,7 +275,7 @@ header .headline {
 footer {
     font-size: 14px;
     width: 100%;
-    background-color: #c0c0c0;
+    background-color: #9a9a9a;
     color: #fff;
     text-align: center;
     padding: 10px 0;
