@@ -30,6 +30,10 @@ header .headline {
     font-size: 12px;
 }
 
+.mt-0 {
+    margin-top: 0!important;
+}
+
 .b-none {
     border: none;
 }
@@ -289,4 +293,12 @@ footer {
 .article__Title {
     font-size: 32px;
     font-weight: bold;
+}
+
+/**
+ * 管理画面 - bread
+ */
+#preview {
+    padding: 5px 10px;
+    border: 1px solid #e4eaec;
 }
