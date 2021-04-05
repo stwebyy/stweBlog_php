@@ -18,7 +18,7 @@ class CreateQiitaArticleTable extends Migration
             $table->string('title', 100);
             $table->text('rendered_body');
             $table->text('body');
-            $table->string('url', 200);
+            $table->string('url', 200)->nullable();
             $table->timestamps();
         });
     }
