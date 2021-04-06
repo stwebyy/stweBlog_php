@@ -17,6 +17,7 @@
                     </div>
                 </div>
                 <div class="article__Content">
+                    {{ $article->body }}
                     <h2 class="article__Headline color-bk">Symfony Formtypeに関して</h2>
                     <p>仕事でSymfonyを扱うことになりそうなので、勉強用にDocker環境を構築しました。<br>
                         SymfonyはPHPのメジャーフレームワークだけど、Laravelと比べると少し日本語の情報が少ないですね。<br>
