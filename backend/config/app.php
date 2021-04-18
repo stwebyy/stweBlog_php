@@ -176,7 +176,8 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         // add
-        App\Providers\RepositoryServiceProvider::class,
+        App\Providers\ArticleRepositoryServiceProvider::class,
+        App\Providers\QiitaRepositoryServiceProvider::class,
 
     ],
 
