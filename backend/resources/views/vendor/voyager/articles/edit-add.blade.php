@@ -7,7 +7,7 @@
 
 @section('css')
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/solarized-dark.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/atom-one-dark.min.css">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 @stop
 
@@ -147,6 +147,15 @@
         // markdownSetting
         $(function () {
             $('footer').hide();
+            marked.setOptions({
+                breaks : true,
+                langPrefix: '',
+                headerIds: false,
+                // highlightjsを使用したハイライト処理を追加
+                highlight: function (code, lang) {
+                    return hljs.highlightAuto(code, [lang]).value
+                }
+            });
             $('#rendered_body_id').after('<div class="form-group col-md-6 article__Content mt-0"><label class="control-label">preview</label><div id="preview" class="">&nbsp;</div></div>');
             $('textarea[name="rendered_body"]').keyup(function () {
                 var html = marked($(this).val());
