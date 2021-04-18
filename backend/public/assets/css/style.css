@@ -106,6 +106,9 @@ header .headline {
 	width: 100%;
 }
 
+/**
+ * TOPページ、ブログ一覧関連
+ */
 .article__Row {
     border: 1px solid #e7e7e7;
     padding: 10px 20px;
@@ -142,8 +145,19 @@ header .headline {
     margin-top: 5px;
 }
 
+/**
+ * ブログ詳細関連
+ */
 .article__Content {
     margin-top: 50px;
+}
+
+.article__Content h1 {
+    font-size: 28px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    margin: 40px 0;
 }
 
 .article__Content h2 {
@@ -168,6 +182,20 @@ header .headline {
     padding-left: 10px;
     border-left: 2px solid #8f8f8f;
     margin: 40px 0;
+}
+
+.article__Content pre {
+    color: #fff;
+    background: #23241f;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    font-size: 0.9em;
+    position: relative;
+}
+
+.article__Content p code {
+    background: #eee;
+    padding: 0.1em 0.4em;
 }
 
 .article__LastBtn {

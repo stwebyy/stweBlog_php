@@ -17,22 +17,7 @@
                     </div>
                 </div>
                 <div class="article__Content">
-                    {{ $article->body }}
-                    <h2 class="article__Headline color-bk">Symfony Formtypeに関して</h2>
-                    <p>仕事でSymfonyを扱うことになりそうなので、勉強用にDocker環境を構築しました。<br>
-                        SymfonyはPHPのメジャーフレームワークだけど、Laravelと比べると少し日本語の情報が少ないですね。<br>
-                        Laravelを使っているとSymfonyの日本語の情報の少なさに狼狽える自分ががｇ
-                    </p>
-                    <h3>リポジトリ</h3>
-                    <p>仕事でSymfonyを扱うことになりそうなので、勉強用にDocker環境を構築しました。<br>
-                        SymfonyはPHPのメジャーフレームワークだけど、Laravelと比べると少し日本語の情報が少ないですね。<br>
-                        Laravelを使っているとSymfonyの日本語の情報の少なさに狼狽える自分ががｇ
-                    </p>
-                    <h4>hosts</h4>
-                    <p>仕事でSymfonyを扱うことになりそうなので、勉強用にDocker環境を構築しました。<br>
-                        SymfonyはPHPのメジャーフレームワークだけど、Laravelと比べると少し日本語の情報が少ないですね。<br>
-                        Laravelを使っているとSymfonyの日本語の情報の少なさに狼狽える自分ががｇ
-                    </p>
+                    {!! $article->body !!}
                 </div>
             </article>
             <div class="row mt-5">
