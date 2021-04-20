@@ -3,6 +3,8 @@
 namespace App\Repositories\Qiita;
 
 use App\Models\QiitaArticle;
+use App\Service\QiitaApiService;
+use Carbon\Carbon;
 
 class QiitaRepository implements QiitaRepositoryInterface
 {
@@ -12,15 +14,24 @@ class QiitaRepository implements QiitaRepositoryInterface
     protected $qiita;
 
     /**
+     * @var QiitaApiService
+     */
+    protected $qiita_api_service;
+
+    /**
     * @param object $qiita
     */
-    public function __construct(QiitaArticle $qiita)
+    public function __construct(
+        QiitaArticle $qiita,
+        QiitaApiService $qiita_api_service
+    )
     {
         $this->qiita = $qiita;
+        $this->qiita_api_service = $qiita_api_service;
     }
 
     /**
-     * QiitaからAPI経由でレコードを取得
+     * レコードを取得
      *
      * @return string
      */
@@ -30,11 +41,36 @@ class QiitaRepository implements QiitaRepositoryInterface
     }
 
     /**
-     * Qiitaから取得した記事の保存
+     * 記事の保存
+     * 記事数が膨大ではないため、ループにて1件ずつクエリを発行
      * 
-     * @return object
+     * @return void
      */
     public function saveQiitaArticles(): void
     {
+        $json_articles = $this->qiita_api_service->fetchQiitaArticleByApi();
+        foreach ($json_articles as $article) {
+            $created_at = new Carbon($article->created_at);
+            $created_at->toFormattedDateString();
+            $updated_at = new Carbon($article->updated_at);
+            $updated_at->toFormattedDateString();
+
+            $this->qiita->updateOrCreate(
+                [
+                    'title' => $article->title,
+                    'body' => $article->body,
+                    'rendered_body' => $article->rendered_body,
+                    'url' => $article->url
+                ],
+                [
+                    'title' => $article->title,
+                    'body' => $article->body,
+                    'rendered_body' => $article->rendered_body,
+                    'url' => $article->url,
+                    'created_at' => $created_at,
+                    'updated_at' => $updated_at,
+                ]
+            );
+        }
     }
 }

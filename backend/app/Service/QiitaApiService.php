@@ -25,7 +25,7 @@ class QiitaApiService
      * @param string 対象URL
      * @param string HTTPメソッド
      * 
-     * @return json APIから取得した記事一覧
+     * @return json APIから取得したjson
      */
     public function execCurlToQiitaApi($url, $method)
     {
