@@ -28,7 +28,7 @@ class QiitaArticle extends Model
     ];
 
     protected $casts = [
-        'created_at' => 'timestamp',
-        'updated_at' => 'timestamp'
+        'created_at' => 'datetime:Y-m-d',
+        'updated_at' => 'datetime:Y-m-d'
     ];
 }
