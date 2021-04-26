@@ -156,10 +156,10 @@
                     return hljs.highlightAuto(code, [lang]).value
                 }
             });
-            $('#rendered_body_id').after('<div class="form-group col-md-6 article__Content mt-0"><label class="control-label">preview</label><div id="preview" class="">&nbsp;</div></div>');
-            $('textarea[name="rendered_body"]').keyup(function () {
+            $('#body_id').after('<div class="form-group col-md-6 article__Content mt-0"><label class="control-label">preview</label><div id="preview" class="">&nbsp;</div></div>');
+            $('textarea[name="body"]').keyup(function () {
                 var html = marked($(this).val());
-                $('textarea[name="body"]').val(html);
+                $('textarea[name="rendered_body"]').val(html);
                 $('#preview').html(html);
             });
         });    
