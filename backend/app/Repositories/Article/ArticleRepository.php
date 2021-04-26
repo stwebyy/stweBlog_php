@@ -24,7 +24,7 @@ class ArticleRepository implements ArticleRepositoryInterface
     /**
      * 全てのレコードを取得
      *
-     * @return collection
+     * @return Collection
      */
     public function getArticles(): Collection
     {

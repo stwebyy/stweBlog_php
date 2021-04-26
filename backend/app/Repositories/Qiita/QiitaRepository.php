@@ -5,6 +5,7 @@ namespace App\Repositories\Qiita;
 use App\Models\QiitaArticle;
 use App\Service\QiitaApiService;
 use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Collection;
 
 class QiitaRepository implements QiitaRepositoryInterface
 {
@@ -33,9 +34,9 @@ class QiitaRepository implements QiitaRepositoryInterface
     /**
      * レコードを取得
      *
-     * @return string
+     * @return collection
      */
-    public function getQiitaArticles(): string
+    public function getQiitaArticles(): Collection
     {
         return $this->qiita->get();
     }

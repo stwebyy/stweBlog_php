@@ -2,6 +2,8 @@
 
 namespace App\Repositories\Qiita;
 
+use Illuminate\Database\Eloquent\Collection;
+
 interface QiitaRepositoryInterface
 {
     /**
@@ -9,7 +11,7 @@ interface QiitaRepositoryInterface
      *
      * @return string
      */
-    public function getQiitaArticles(): string;
+    public function getQiitaArticles(): Collection;
 
     /**
      * Qiitaから取得した記事の保存
