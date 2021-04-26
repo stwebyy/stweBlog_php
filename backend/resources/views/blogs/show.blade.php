@@ -6,10 +6,10 @@
         <div class="card col-8 bg-white base__BoxShadow b-none">
             {{ Breadcrumbs::render('blog') }}
             <article class="article__BoxWrap">
-                <h1 class="article__Title color-bk">テストタイトル</h1>
+                <h1 class="article__Title color-bk">{{ $article->title }}</h1>
                 <div class="article__RowDate mb-2 mt-2">
-                    <i class="fas fa-calendar-week"></i><span class="ml-1">2021/03/17</span>
-                    <span class="ml-2"><i class="fas fa-sync"></i><span class="ml-1">2021/03/19</span></span>
+                    <i class="fas fa-calendar-week"></i><span class="ml-1">{{ $article->created_at }}</span>
+                    <span class="ml-2"><i class="fas fa-sync"></i><span class="ml-1">{{ $article->updated_at }}</span></span>
                 </div>
                 <div class="article__Tag mt-2">
                     <div class="tag__ItemList">
@@ -17,12 +17,12 @@
                     </div>
                 </div>
                 <div class="article__Content">
-                    {!! $article->body !!}
+                    {!! $article->rendered_body !!}
                 </div>
             </article>
             <div class="row mt-5">
                 <div class="offset-3 col-6 text-center">
-                    <a class="btn article__LastBtn" href="#">ブログ一覧へ</a>
+                    <a class="btn article__LastBtn" href="{{ route('blog_index') }}">ブログ一覧へ</a>
                 </div>
             </div>
         </div>
