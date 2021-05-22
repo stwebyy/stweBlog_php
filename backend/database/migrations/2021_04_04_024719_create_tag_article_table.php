@@ -15,11 +15,11 @@ class CreateTagArticleTable extends Migration
     {
         Schema::create('article_tags', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('merge_article_id');
+            $table->unsignedBigInteger('article_id');
             $table->unsignedBigInteger('tag_id');
             $table->timestamps();
 
-            $table->foreign('merge_article_id')->references('id')->on('merge_article_ids');
+            $table->foreign('article_id')->references('id')->on('articles');
             $table->foreign('tag_id')->references('id')->on('tags');
         });
     }

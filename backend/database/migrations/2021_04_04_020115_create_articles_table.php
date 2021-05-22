@@ -19,7 +19,9 @@ class CreateArticlesTable extends Migration
             $table->text('rendered_body');
             $table->text('body');
             $table->string('url', 200)->nullable();
-            $table->timestamps();
+            $table->boolean('isQiita')->default(false);
+            $table->dateTime('created_at', 0)->useCurrent();
+            $table->dateTime('updated_at', 0);
         });
     }
 
