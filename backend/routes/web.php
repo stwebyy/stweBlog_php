@@ -7,10 +7,6 @@ Route::prefix('blog')->group(function() {
     Route::get('/{id}', 'BlogController@show')->name('blog_show');
 });
 
-Route::prefix('qiita')->group(function() {
-    Route::get('/', 'QiitaController@qiitaArticles')->name('index');
-});
-
 // Voyagerのデフォルトルーティング
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

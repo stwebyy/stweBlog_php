@@ -2,22 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Repositories\Article\ArticleRepositoryInterface;
-use App\Service\MergeArticleService;
 
 class BlogController extends Controller
 {
     /**
      * @return void
      */
-    public function __construct(
-        ArticleRepositoryInterface $article,
-        MergeArticleService $merge_article_service
-    )
+    public function __construct(ArticleRepositoryInterface $article)
     {
         $this->article = $article;
-        $this->merge_article_service = $merge_article_service;
     }
 
     /**
@@ -27,7 +21,7 @@ class BlogController extends Controller
      */
     public function index(): object
     {
-        $articles = $this->merge_article_service->getAllArticlesCollection();
+        $articles = $this->article->getArticles();
 
         return view('blogs.index', [
             'articles' => $articles
@@ -43,10 +37,10 @@ class BlogController extends Controller
      */
     public function show(string $id): object
     {
-        $articles = $this->merge_article_service->getAllArticlesCollection();
+        $article = $this->article->findArticleById($id);
 
         return view('blogs.show', [
-            'article' => $articles[$id]
+            'article' => $article
         ]);
     }
 }
