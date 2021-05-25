@@ -11,7 +11,7 @@ class QiitaApiService
 
     /**
      * construct
-     * 
+     *
      * @return void
      */
     public function __construct()
@@ -21,10 +21,10 @@ class QiitaApiService
 
     /**
      * cURLの設定、実行
-     * 
+     *
      * @param string 対象URL
      * @param string HTTPメソッド
-     * 
+     *
      * @return json APIから取得したjson
      */
     public function execCurlToQiitaApi($url, $method)
@@ -50,7 +50,7 @@ class QiitaApiService
 
     /**
      * Qiitaから自分の記事一覧を取得する
-     * 
+     *
      * @return json
      */
     public function fetchQiitaArticleByApi()

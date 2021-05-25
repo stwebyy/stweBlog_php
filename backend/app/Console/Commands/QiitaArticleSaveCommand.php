@@ -33,8 +33,7 @@ class QiitaArticleSaveCommand extends Command
         QiitaApiService $qiita_api,
         Article $article,
         Tag $tag
-    )
-    {
+    ) {
         parent::__construct();
         $this->qiita_api = $qiita_api;
         $this->article = $article;
@@ -74,7 +73,7 @@ class QiitaArticleSaveCommand extends Command
                 ]
             );
             foreach ($article->tags as $tag) {
-                $tag_obj =$this->tag->updateOrCreate(
+                $tag_obj = $this->tag->updateOrCreate(
                     ['name' => $tag->name],
                     ['name' => $tag->name]
                 );

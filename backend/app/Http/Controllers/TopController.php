@@ -8,7 +8,7 @@ class TopController extends Controller
 {
     /**
      * TOPページ
-     * 
+     *
      * @return View
      */
     public function index(): object

@@ -16,7 +16,7 @@ class BlogController extends Controller
 
     /**
      * ブログTOPページ
-     * 
+     *
      * @return View
      */
     public function index(): object
@@ -30,9 +30,9 @@ class BlogController extends Controller
 
     /**
      * ブログ詳細ページ
-     * 
+     *
      * @param string id
-     * 
+     *
      * @return View
      */
     public function show(string $id): object

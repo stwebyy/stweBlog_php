@@ -17,9 +17,9 @@ interface ArticleRepositoryInterface
 
     /**
      * 単一のレコードを取得
-     * 
+     *
      * @param string id
-     * 
+     *
      * @return object
      */
     public function findArticleById(string $id): Article;

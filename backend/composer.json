@@ -64,6 +64,9 @@
         ],
         "sniffer": [
             "./vendor/bin/phpcs --standard=phpcs.xml ./"
+        ],
+        "sniffer-fix": [
+            "./vendor/bin/phpcbf --standard=phpcs.xml ./"
         ]
     },
     "repositories": {

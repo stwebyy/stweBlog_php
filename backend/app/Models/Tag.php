@@ -8,7 +8,7 @@ class Tag extends Model
 {
     /**
      * 関連table名
-     * 
+     *
      * @var string
      */
     protected $table = 'tags';
@@ -21,5 +21,4 @@ class Tag extends Model
     protected $fillable = [
         'name'
     ];
-
 }
