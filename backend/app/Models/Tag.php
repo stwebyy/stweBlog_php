@@ -12,4 +12,14 @@ class Tag extends Model
      * @var string
      */
     protected $table = 'tags';
+
+    /**
+     * 複数代入する属性
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'name'
+    ];
+
 }
