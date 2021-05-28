@@ -21,7 +21,7 @@ class BlogController extends Controller
      */
     public function index(): object
     {
-        $articles = $this->article->getArticles();
+        $articles = $this->article->getArticles()->sortByDesc('updated_at');
 
         return view('blogs.index', [
             'articles' => $articles

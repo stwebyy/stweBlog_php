@@ -7,7 +7,7 @@
             {{ Breadcrumbs::render('blog') }}
             @foreach ($articles as $article)
             <article class="article__Row">
-                <a href="{{ route("blog_show", $loop->index) }}">
+                <a href="{{ route("blog_show", $article->id) }}">
                     <div class="article__RowDate mb-1">
                         <i class="fas fa-calendar-week"></i><span class="ml-1">{{ $article->created_at }}</span>
                         <span class="ml-2"><i class="fas fa-sync"></i><span class="ml-1">{{ $article->updated_at }}</span></span>

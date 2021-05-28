@@ -1,26 +1,22 @@
 <aside class="col-4">
     <div class="bg-white base__BoxShadow">
         {{-- TODO: ブログ記事の場合、目次を入れるという条件分岐の作成 --}}
+        @php
+            $articles = App\Models\Article::get()->sortByDesc('updated_at');
+        @endphp
         <div class="right__Box">
             <h5 class="right__Header">Recent Posts</h5>
+            @foreach ($articles as $article)
+            @if ($loop->index >= 3)
+                @break
+            @endif
             <div class="recent__Posts">
-                <a href="#">
+                <a href="{{ route('blog_show', $article->id) }}">
                     <p class="fs-12 color-light-gray"><i class="fas fa-calendar-week"></i><span class="ml-1">2021/03/17</span></p>
-                    <p class="recent__PostsTitle">テストタイトル</p>
+                    <p class="recent__PostsTitle">{{ $article->title }}</p>
                 </a>
             </div>
-            <div class="recent__Posts">
-                <a href="#">
-                    <p class="fs-12 color-light-gray"><i class="fas fa-calendar-week"></i><span class="ml-1">2021/03/17</span></p>
-                    <p class="recent__PostsTitle">今日のSymfony FormTypeに関してまとめてみた</p>
-                </a>
-            </div>
-            <div class="recent__Posts">
-                <a href="#">
-                    <p class="fs-12 color-light-gray"><i class="fas fa-calendar-week"></i><span class="ml-1">2021/03/17</span></p>
-                    <p class="recent__PostsTitle">Laravel×React×Docker×AWS EC2のベストプラクティスに関してまとめた結果こうなった</p>
-                </a>
-            </div>
+            @endforeach
         </div>
         <div class="right__Box">
             <h5 class="right__Header">Tags</h5>
