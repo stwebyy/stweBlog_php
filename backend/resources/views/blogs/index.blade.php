@@ -14,9 +14,11 @@
                     </div>
                     <h1 class="article__RowTitle color-bk">{{ $article->title }}</h1>
                     <div class="article__Tag">
+                        @foreach ($article->tags as $tag)
                         <div class="tag__ItemList">
-                            <object><a href="#?1"><i class="fas fa-tag"></i>&nbsp;Symfony</a></object>
+                            <object><a href="#?1"><i class="fas fa-tag"></i>&nbsp;{{ $tag->name }}</a></object>
                         </div>
+                        @endforeach
                     </div>
                 </a>
             </article>

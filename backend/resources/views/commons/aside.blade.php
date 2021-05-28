@@ -21,27 +21,11 @@
         <div class="right__Box">
             <h5 class="right__Header">Tags</h5>
             <div class="tag__Items">
+                @foreach (\App\Models\Tag::all() as $tag)
                 <div class="tag__ItemList">
-                    <object><a href="#?1"><i class="fas fa-tag"></i>&nbsp;PHP</a></object>
+                    <object><a href="#?1"><i class="fas fa-tag"></i>&nbsp;{{ $tag->name }}</a></object>
                 </div>
-                <div class="tag__ItemList">
-                    <object><a href="#?1"><i class="fas fa-tag"></i>&nbsp;Laravel</a></object>
-                </div>
-                <div class="tag__ItemList">
-                    <object><a href="#?1"><i class="fas fa-tag"></i>&nbsp;Symfony</a></object>
-                </div>
-                <div class="tag__ItemList">
-                    <object><a href="#?1"><i class="fas fa-tag"></i>&nbsp;Symfony</a></object>
-                </div>
-                <div class="tag__ItemList">
-                    <object><a href="#?1"><i class="fas fa-tag"></i>&nbsp;Symfony</a></object>
-                </div>
-                <div class="tag__ItemList">
-                    <object><a href="#?1"><i class="fas fa-tag"></i>&nbsp;Docker</a></object>
-                </div>
-                <div class="tag__ItemList">
-                    <object><a href="#?1"><i class="fas fa-tag"></i>&nbsp;Linux</a></object>
-                </div>
+                @endforeach
             </div>
         </div>
         <div class="right__Box">
