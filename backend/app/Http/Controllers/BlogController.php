@@ -15,20 +15,6 @@ public function __construct(ArticleRepositoryInterface $article)
     }
 
     /**
-     * ブログTOPページ
-     *
-     * @return View
-     */
-    public function index(): object
-    {
-        $articles = $this->article->getArticlesPaginate();
-
-        return view('blogs.index', [
-            'articles' => $articles
-        ]);
-    }
-
-    /**
      * ブログ詳細ページ
      *
      * @param string id

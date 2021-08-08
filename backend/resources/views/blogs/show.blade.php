@@ -22,7 +22,7 @@
             </article>
             <div class="row mt-5">
                 <div class="offset-3 col-6 text-center">
-                    <a class="btn article__LastBtn" href="{{ route('blog_index') }}">ブログ一覧へ</a>
+                    <a class="btn article__LastBtn" href="{{ route('index') }}">ブログ一覧へ</a>
                 </div>
             </div>
         </div>
