@@ -14,7 +14,6 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->bind('App\Service\QiitaApiService');
-        $this->app->bind('App\Service\MergeArticleService');
     }
 
     /**

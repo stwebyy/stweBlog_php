@@ -18,7 +18,7 @@ class TagRepository implements TagRepositoryInterface
     */
     public function __construct(Tag $tag)
     {
-        $this->Tag = $tag;
+        $this->tag = $tag;
     }
 
     /**
@@ -50,6 +50,6 @@ class TagRepository implements TagRepositoryInterface
      */
     public function saveTags(): void
     {
-        return $this->tag->get();
+        // TODO
     }
 }

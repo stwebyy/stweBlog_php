@@ -177,7 +177,7 @@ return [
 
         // add
         App\Providers\ArticleRepositoryServiceProvider::class,
-        App\Providers\QiitaRepositoryServiceProvider::class,
+        App\Providers\TagRepositoryServiceProvider::class,
 
     ],
 
