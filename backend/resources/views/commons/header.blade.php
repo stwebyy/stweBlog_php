@@ -6,7 +6,7 @@
     </div>
     <ul class="nav-list">
         <li class="nav-list-item">
-            <a href="#" class="nav-list-link">Home</a>
+            <a href="/" class="nav-list-link">Home</a>
         </li>
         <li class="nav-list-item"><a href="{{ route('blog_index') }}" class="nav-list-link">ブログ/備忘録</a></li>
     </ul>

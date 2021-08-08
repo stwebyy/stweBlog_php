@@ -2,10 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Repositories\Article\ArticleRepositoryInterface;
 
 class TopController extends Controller
 {
+    /**
+     * @return void
+     */
+    public function __construct(ArticleRepositoryInterface $article)
+    {
+        $this->article = $article;
+    }
+
     /**
      * TOPページ
      *
@@ -13,6 +21,10 @@ class TopController extends Controller
      */
     public function index(): object
     {
-        return view('index');
+        $articles = $this->article->getArticles()->sortByDesc('updated_at');
+
+        return view('index', [
+            'articles' => $articles
+        ]);
     }
 }
