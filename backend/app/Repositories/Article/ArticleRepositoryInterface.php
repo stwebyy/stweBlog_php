@@ -3,6 +3,7 @@
 namespace App\Repositories\Article;
 
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Pagination\LengthAwarePaginator;
 
 use App\Models\Article;
 
@@ -11,9 +12,9 @@ interface ArticleRepositoryInterface
     /**
      * 全てのレコードを取得
      *
-     * @return Collection
+     * @return LengthAwarePaginator
      */
-    public function getArticles(): Collection;
+    public function getArticlesPaginate(): LengthAwarePaginator;
 
     /**
      * 単一のレコードを取得
