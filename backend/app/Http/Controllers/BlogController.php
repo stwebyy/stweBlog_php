@@ -9,7 +9,7 @@ class BlogController extends Controller
     /**
      * @return void
      */
-    public function __construct(ArticleRepositoryInterface $article)
+public function __construct(ArticleRepositoryInterface $article)
     {
         $this->article = $article;
     }
@@ -21,7 +21,7 @@ class BlogController extends Controller
      */
     public function index(): object
     {
-        $articles = $this->article->getArticles()->sortByDesc('updated_at');
+        $articles = $this->article->getArticlesPaginate();
 
         return view('blogs.index', [
             'articles' => $articles

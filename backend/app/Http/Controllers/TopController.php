@@ -21,7 +21,7 @@ class TopController extends Controller
      */
     public function index(): object
     {
-        $articles = $this->article->getArticles()->sortByDesc('updated_at');
+        $articles = $this->article->getArticlesPaginate();
 
         return view('index', [
             'articles' => $articles
