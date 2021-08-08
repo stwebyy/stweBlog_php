@@ -297,6 +297,12 @@ header .headline {
     color: #9b9b9b;
 }
 
+.page-item.active .page-link {
+    color: #0056b3;
+    background-color: #c2c6ca;
+    border-color: #c2c6ca;
+}
+
 #wrapper {
     min-height: 100vh;
     position: relative;

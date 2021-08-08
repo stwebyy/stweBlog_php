@@ -23,7 +23,7 @@
                 </a>
             </article>
             @endforeach
-            @include('components.pagination')
+            {{ $articles->links() }}
         </div>
         @include('commons.aside')
     </div>

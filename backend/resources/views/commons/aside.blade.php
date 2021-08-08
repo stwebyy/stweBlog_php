@@ -2,7 +2,7 @@
     <div class="bg-white base__BoxShadow">
         {{-- TODO: ブログ記事の場合、目次を入れるという条件分岐の作成 --}}
         @php
-            $articles = App\Models\Article::get()->sortByDesc('updated_at');
+            $articles = App\Models\Article::get()->sortByDesc('created_at');
         @endphp
         <div class="right__Box">
             <h5 class="right__Header">Recent Posts</h5>
