@@ -12,7 +12,7 @@
             @endif
             <div class="recent__Posts">
                 <a href="{{ route('blog_show', $article->id) }}">
-                    <p class="fs-12 color-light-gray"><i class="fas fa-calendar-week"></i><span class="ml-1">2021/03/17</span></p>
+                    <p class="fs-12 color-light-gray"><i class="fas fa-calendar-week"></i><span class="ml-1">{{ $article->created_at->format('Y/m/d H:i:s') }}</span></p>
                     <p class="recent__PostsTitle">{{ $article->title }}</p>
                 </a>
             </div>
