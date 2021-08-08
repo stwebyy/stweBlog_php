@@ -12,9 +12,11 @@
                     <span class="ml-2"><i class="fas fa-sync"></i><span class="ml-1">{{ $article->updated_at }}</span></span>
                 </div>
                 <div class="article__Tag mt-2">
+                    @foreach ($article->tags as $tag)
                     <div class="tag__ItemList">
-                        <object><a href="#?1"><i class="fas fa-tag"></i>&nbsp;Symfony</a></object>
+                        <object><a href="#"><i class="fas fa-tag"></i>&nbsp;{{ $tag->name }}</a></object>
                     </div>
+                    @endforeach
                 </div>
                 <div class="article__Content">
                     {!! $article->rendered_body !!}

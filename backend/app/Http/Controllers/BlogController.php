@@ -9,7 +9,7 @@ class BlogController extends Controller
     /**
      * @return void
      */
-public function __construct(ArticleRepositoryInterface $article)
+    public function __construct(ArticleRepositoryInterface $article)
     {
         $this->article = $article;
     }
