@@ -21,4 +21,14 @@ class Tag extends Model
     protected $fillable = [
         'name'
     ];
+
+    /**
+     * The tags that belong to the Article
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     */
+    public function articles()
+    {
+        return $this->belongsToMany(Article::class, 'article_tags', 'tag_id', 'article_id');
+    }
 }
