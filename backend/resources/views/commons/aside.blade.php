@@ -37,8 +37,8 @@
                 <h5 class="card-title text-center"><a href="/" target="_blank">stweb</a></h5>
                 <p class="card-text text-center mb-2">PHP/Python<br>Laravel/Symfony/Django<br>FPS/鉄拳</p>
                 <div class="text-center">
-                    <a href="https://github.com/stwebyy" class="card-link"><img src="{{ asset('assets/images/GitHub-Mark-32px.png') }}" width="25px" /></a>
-                    <a href="https://qiita.com/nyokinyoki1848" class="card-link"><img src="{{ asset('assets/images/qiita_favicon.png') }}" width="25px" /></a>
+                    <a href="https://github.com/stwebyy" class="card-link" target="_blank"><img src="{{ asset('assets/images/GitHub-Mark-32px.png') }}" width="25px" /></a>
+                    <a href="https://qiita.com/nyokinyoki1848" class="card-link" target="_blank"><img src="{{ asset('assets/images/qiita_favicon.png') }}" width="25px" /></a>
                 </div>
             </div>
         </div>
