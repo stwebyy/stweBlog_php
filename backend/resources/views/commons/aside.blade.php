@@ -23,7 +23,7 @@
             <div class="tag__Items">
                 @foreach (\App\Models\Tag::all() as $tag)
                 <div class="tag__ItemList">
-                    <object><a href="#?1"><i class="fas fa-tag"></i>&nbsp;{{ $tag->name }}</a></object>
+                    <object><a href="{{ route('tag_show', $tag->id) }}"><i class="fas fa-tag"></i>&nbsp;{{ $tag->name }}</a></object>
                 </div>
                 @endforeach
             </div>
